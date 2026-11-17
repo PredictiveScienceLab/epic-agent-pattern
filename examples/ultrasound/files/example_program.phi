@@ -1,0 +1,16 @@
+# phi-script for case_dd6fb9c8 (2CH ES)
+align apex=(82,30) hinge_l=(64,93) hinge_r=(102,92)   # cavity tip under near-field haze; roots of closed mitral leaflets (right root at inner corner of bright anterior base)
+push wall 6..9.5 in 7 taper 1.2    # anterior wall: inner edge of bright band is at x~103-106, line was at x~115
+atrium depth 0.70 width 1.0        # dark atrial pool ends at y~119, reference roof was at y~133
+move la_roof by 9 -1 span 3        # atrial pool is centred under the valve (x 62..113), reference leaned left
+push la 6.8..9.2 out 6 taper 1.0   # right atrial wall: dark pool reaches x~112, line was at x~100
+push la 7.7..9.2 out 4 taper 0.7   # right atrial wall, remaining gap above the corner
+move epi_apex by 0 -3 span 2       # apical wall drawn thicker, as in the examples (no pericardium visible under near-field haze)
+push endo 3.4..4.6 in 2            # apical inferior wall: grey wall edge at x~70-72, line was at x~66-68
+offset la 1:-2 2:-4 3:-4 4:-1.5    # left atrial wall: dark pool edge at x~62, line was at x~56-58 inside bright tissue
+smooth la 0.5..4.3 9               # iron the crumple left at the left atrial corner
+smooth la 4.3..6.8 5               # iron the wiggles on the roof
+move epi_r by 2 0                  # basal anterior wall: bright wall block reaches further right than the line
+smooth endo 8.3..10 5              # remove the S-kink above the right hinge
+smooth epi 8.3..10 5               # same on the epicardium
+push la 7.3..8.4 out 1.5 taper 0.6 # lower right atrial wall: dark pool reaches x~112-113
